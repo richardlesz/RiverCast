@@ -1,0 +1,32 @@
+{
+  "target_column": "waterlevel_value",
+  "feature_columns": [
+    "rainfall_value_T-2",
+    "release_target_T-3",
+    "waterlevel_value_T-1"
+  ],
+  "excluded_columns": [
+    "streamflow_value"
+  ],
+  "training_rows": 3321,
+  "cv_folds": 10,
+  "best_params": {
+    "model__n_estimators": 50,
+    "model__min_samples_leaf": 5,
+    "model__max_depth": 3,
+    "model__learning_rate": 0.1
+  },
+  "metrics": {
+    "r2_mean": 0.9024916297329387,
+    "r2_std": 0.033459874430037076,
+    "mae_mean": 0.0793027275114182,
+    "mae_std": -0.007924648677947057,
+    "rmse_mean": 0.17150915622055649,
+    "rmse_std": -0.034144979048489385
+  },
+  "feature_importance": {
+    "waterlevel_value_T-1": 0.9725412091299832,
+    "rainfall_value_T-2": 0.017247896760632493,
+    "release_target_T-3": 0.010210894109384262
+  }
+}
